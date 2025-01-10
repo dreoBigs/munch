@@ -19,4 +19,5 @@ export interface Recipe {
   difficulty: Difficulty;
   imageUrl: string;
   tags: string[];
+  tips?: string[];
 }

@@ -2,6 +2,7 @@ import { Recipe } from "../types/recipe";
 import { Badge } from "./ui/badge";
 import { Clock, Users, ChefHat } from "lucide-react";
 import { Separator } from "./ui/separator";
+import { Card } from "./ui/card";
 
 interface RecipeDetailProps {
   recipe: Recipe;
@@ -59,11 +60,24 @@ export const RecipeDetail = ({ recipe }: RecipeDetailProps) => {
 
         <div className="space-y-4">
           <h2 className="font-display text-2xl">Instructions</h2>
-          <ol className="space-y-4">
+          <ol className="space-y-6">
             {recipe.instructions.map((instruction, index) => (
-              <li key={index} className="flex gap-4">
-                <span className="font-display text-accent">{index + 1}.</span>
-                <span>{instruction}</span>
+              <li key={index}>
+                <Card className="p-4">
+                  <div className="flex gap-4">
+                    <span className="font-display text-accent text-lg">
+                      {index + 1}.
+                    </span>
+                    <div className="space-y-2 flex-1">
+                      <p>{instruction}</p>
+                      {recipe.tips?.[index] && (
+                        <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md">
+                          💡 Tip: {recipe.tips[index]}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </Card>
               </li>
             ))}
           </ol>
