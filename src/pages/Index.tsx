@@ -44,7 +44,7 @@ const Index = () => {
       <section className="bg-secondary py-16 mb-12">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center space-y-4">
-            <h1 className="font-display text-5xl">Delicious & Nutritious</h1>
+            <h1 className="font-sans text-5xl font-light tracking-tight">munch</h1>
             <p className="text-xl text-muted-foreground">
               Discover recipes that are both tasty and good for you
             </p>
