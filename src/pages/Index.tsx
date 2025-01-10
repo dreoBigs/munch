@@ -44,7 +44,7 @@ const Index = () => {
       <section className="bg-secondary py-16 mb-12">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center space-y-4">
-            <h1 className="font-sans text-5xl font-light tracking-tight">munch</h1>
+            <h1 className="text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-md">munch</h1>
             <p className="text-xl text-muted-foreground">
               Discover recipes that are both tasty and good for you
             </p>
