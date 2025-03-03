@@ -75,6 +75,7 @@ export type Database = {
           calories: number | null
           created_at: string
           description: string | null
+          difficulty: string | null
           id: string
           image_url: string | null
           name: string | null
@@ -85,6 +86,7 @@ export type Database = {
           calories?: number | null
           created_at?: string
           description?: string | null
+          difficulty?: string | null
           id?: string
           image_url?: string | null
           name?: string | null
@@ -95,6 +97,7 @@ export type Database = {
           calories?: number | null
           created_at?: string
           description?: string | null
+          difficulty?: string | null
           id?: string
           image_url?: string | null
           name?: string | null
